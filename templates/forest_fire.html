@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forest Fire Prediction</title>
+    <link rel="stylesheet" type="text/css" href="./static/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+    <h1 class="heading" id="heading">Forest Fire Prediction 🔥</h1>
+    <h3 class="tagline" id="tagline">Predict the probability of forest fire occurence</h3>
+
+    <form  action='/predict' method="POST">
+    <div class="container" id="container">
+        <br>
+        <label for="Temperature"> Temperature (°C): </label>
+        <input type="text" name="Temperature" id="temp" class="validate">
+         <br>
+         <label for="Oxygen"> Oxygen (ppm): </label>
+         <input type="text" name="Oxygen" id="temp" class="validate">
+        <br>
+        <label for="Humidity"> Humidity (%):  </label>
+        <input type="text" name="humidity" id="temp" class="validate">
+        <br>
+    </div>
+    <button  type="submit" id="predict">PREDICT PROBABILITY</button>
+    </form>
+    {{pred}}
+
+    <br>
+    <br>
+    <footer>
+    <a  id="footer" href="linkedin.com/rajivpatkar_">Developed By Rajiv Patkar</a>
+</footer>
+</body>
